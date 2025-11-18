@@ -141,7 +141,7 @@ async def entrypoint(ctx: agents.JobContext):
             model="flux-general-en",
             eager_eot_threshold=0.4,
         ),
-        llm=openai.LLM(model="Qwen3-30B-A3B-Instruct-2507-AWQ-4bit", base_url="http://122.176.24.165:6896/v1"),
+        llm=openai.LLM(model="", base_url=""),
         tts=deepgram.TTS(model="aura-asteria-en"),
         vad=silero.VAD.load(),
         turn_detection=MultilingualModel(),

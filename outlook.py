@@ -60,8 +60,8 @@ async def entrypoint(ctx: agents.JobContext):
         ),
 
         llm=openai.LLM(
-            model="Qwen3-30B-A3B-Instruct-2507-AWQ-4bit", 
-            base_url="http://122.176.24.165:6896/v1"
+            model="", 
+            base_url=""
         ),
 
         tts=deepgram.TTS(
